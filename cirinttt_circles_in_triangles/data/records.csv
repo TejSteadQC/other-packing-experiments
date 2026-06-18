@@ -1,0 +1,10 @@
+n,area,best_equilateral_area,equilateral_source,improvement,min_wall_clearance,min_pair_dist,shape
+23,92.74138,95.909655,Graham-Lubachevsky 1995,3.168274,1.0,2.0,isosceles
+25,99.746134,101.281942,Graham-Lubachevsky 1995,1.535808,1.0,2.0,scalene
+26,102.704868,103.480855,Graham-Lubachevsky 1995,0.775987,1.0,2.0,scalene
+29,115.292243,119.40154,Graham-Lubachevsky 1995,4.109297,0.9999999999,1.9999999994,scalene
+30,118.848622,121.198455,Graham-Lubachevsky 1995,2.349833,0.9999999999,2.0,scalene
+31,122.588045,124.08588,Graham-Lubachevsky 1995,1.497835,1.0,2.0,scalene
+32,127.074904,128.810894,Graham-Lubachevsky 1995,1.73599,1.0,2.0,scalene
+33,129.206348,131.196795,Graham-Lubachevsky 1995,1.990447,0.9999999999,1.9999999999,scalene
+34,131.585923,132.048111,Graham-Lubachevsky 1995,0.462188,0.9999999999,2.0,isosceles

@@ -1,0 +1,57 @@
+{
+ "22": {
+  "d_n_unit_triangle": 0.179396908611866,
+  "eq_side_for_unit_circles": 14.612565741278846,
+  "eq_area": 92.4599367741288
+ },
+ "23": {
+  "d_n_unit_triangle": 0.175153309170525,
+  "eq_side_for_unit_circles": 14.882669779629861,
+  "eq_area": 95.90965467133097
+ },
+ "24": {
+  "d_n_unit_triangle": 0.17445763018701,
+  "eq_side_for_unit_circles": 14.928203230275471,
+  "eq_area": 96.49742261192806
+ },
+ "25": {
+  "d_n_unit_triangle": 0.169065874417891,
+  "eq_side_for_unit_circles": 15.293810046163113,
+  "eq_area": 101.28194192081388
+ },
+ "26": {
+  "d_n_unit_triangle": 0.166738399395271,
+  "eq_side_for_unit_circles": 15.458939080614371,
+  "eq_area": 103.48085479962586
+ },
+ "29": {
+  "d_n_unit_triangle": 0.152189614060732,
+  "eq_side_for_unit_circles": 16.605602842691233,
+  "eq_area": 119.40154031461476
+ },
+ "30": {
+  "d_n_unit_triangle": 0.150761500215428,
+  "eq_side_for_unit_circles": 16.730087938848616,
+  "eq_area": 121.19845498403956
+ },
+ "31": {
+  "d_n_unit_triangle": 0.148543145110506,
+  "eq_side_for_unit_circles": 16.92820323027547,
+  "eq_area": 124.0858798800479
+ },
+ "32": {
+  "d_n_unit_triangle": 0.145102169183849,
+  "eq_side_for_unit_circles": 17.247493078196708,
+  "eq_area": 128.81089407820986
+ },
+ "33": {
+  "d_n_unit_triangle": 0.143447408371201,
+  "eq_side_for_unit_circles": 17.406493622838376,
+  "eq_area": 131.1967952605214
+ },
+ "34": {
+  "d_n_unit_triangle": 0.142869646754496,
+  "eq_side_for_unit_circles": 17.462876340442108,
+  "eq_area": 132.0481111533932
+ }
+}
