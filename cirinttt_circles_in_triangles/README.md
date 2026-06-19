@@ -45,14 +45,18 @@ Each of the fifteen arbitrary-triangle packings beats that best-known equilatera
 | 42 | 161.88709 | 163.07781 | 1.19 | scalene |
 | 43 | 163.71933 | 164.03817 | 0.32 | scalene |
 
-See [`data/records.csv`](data/records.csv) and [`data/packings.json`](data/packings.json).
-Every improving triangle has exactly one 60° interior angle. The n = 24, 27, 28, 35, 36,
-40, 44 cases, where the equilateral triangle is itself optimal, are not claimed.
+The three triangle side lengths for each `n` are in
+[`data/records.csv`](data/records.csv) (columns `side_a ≤ side_b ≤ side_c`); full
+coordinates are in [`data/packings.json`](data/packings.json). Every improving triangle
+has exactly one 60° interior angle. The n = 24, 27, 28, 35, 36, 40, 44 cases, where the
+equilateral triangle is itself optimal, are not claimed.
 
-![all packings](figures/all_packings.png)
+Diagrams in Erich Friedman's site style (gray fill, black outline, no center dots) are in
+[`figures_ef/`](figures_ef/): small PNGs (`figures_ef/png/`, sized so the outlines survive
+downscaling) and crisp SVGs (`figures_ef/svg/`), one `nNN` file each, with the side
+lengths captioned in the overview below.
 
-Per-packing images are in [`figures/svg/`](figures/svg/) and [`figures/png/`](figures/png/),
-one `nNN` file each.
+![all packings](figures_ef/all_packings.png)
 
 ### Exact closed form for n = 25
 

@@ -31,10 +31,11 @@ The values increase monotonically in `n`, and each exceeds the published n = 16 
 (~1e-3 to 1e-2 apart); the smaller verified value is reported, and these are the
 likeliest to tighten with more search.
 
-![all packings](figures/all_packings.png)
+Diagrams in Erich Friedman's site style (gray fill, black outline, no center dots) are in
+[`figures_ef/`](figures_ef/): small PNGs (`figures_ef/png/`, sized so the outlines survive
+downscaling) and crisp SVGs (`figures_ef/svg/`), one `nNN` file each.
 
-Per-packing images are in [`figures/svg/`](figures/svg/) and [`figures/png/`](figures/png/),
-one `nNN` file each.
+![all packings](figures_ef/all_packings.png)
 
 ## Verify
 
