@@ -27,29 +27,29 @@ equilateral solve is used, labeled as such in `data/records.csv`.
 
 Each of the fifteen arbitrary-triangle packings beats that best-known equilateral area:
 
-| n | new area (arbitrary triangle) | best-known equilateral | improvement | shape |
-|---|------------------------------|----------------------:|------------:|-------|
-| 23 | 92.74138  | 95.90965  | 3.17 | isosceles |
-| 25 | 99.74613  | 101.28194 | 1.54 | right (exact, see below) |
-| 26 | 102.70487 | 103.48085 | 0.78 | scalene |
-| 29 | 115.29224 | 119.40154 | 4.11 | scalene |
-| 30 | 118.84862 | 121.19845 | 2.35 | scalene |
-| 31 | 122.58804 | 124.08588 | 1.50 | scalene |
-| 32 | 127.07490 | 128.81089 | 1.74 | scalene |
-| 33 | 129.20635 | 131.19680 | 1.99 | scalene |
-| 34 | 131.58592 | 132.04811 | 0.46 | isosceles |
-| 37 | 144.93603 | 148.69955 | 3.76 | scalene |
-| 38 | 148.37141 | 151.90787 | 3.54 | scalene |
-| 39 | 151.83073 | 154.93997 | 3.11 | scalene |
-| 41 | 160.11055 | 161.18946 | 1.08 | scalene |
-| 42 | 161.88709 | 163.07781 | 1.19 | scalene |
-| 43 | 163.71933 | 164.03817 | 0.32 | scalene |
+| n | side lengths $(a,b,c)$ | new area | best-known equilateral | improvement | shape |
+|---|------------------------|---------:|----------------------:|------------:|-------|
+| 23 | 13.9511, 13.9511, 16.4715 | 92.74138  | 95.90966  | 3.17 | isosceles |
+| 25 | 10.7321, 18.5885, 21.4641 | 99.74613  | 101.28194 | 1.54 | right (exact, see below) |
+| 26 | 15.1541, 15.4089, 15.6517 | 102.70487 | 103.48086 | 0.78 | scalene |
+| 29 | 15.2528, 16.4654, 17.4562 | 115.29224 | 119.40154 | 4.11 | scalene |
+| 30 | 15.2021, 16.8109, 18.0547 | 118.84862 | 121.19845 | 2.35 | scalene |
+| 31 | 15.1539, 17.1916, 18.6820 | 122.58804 | 124.08588 | 1.50 | scalene |
+| 32 | 16.1494, 17.2499, 18.1720 | 127.07490 | 128.81089 | 1.74 | scalene |
+| 33 | 16.7258, 17.3098, 17.8400 | 129.20635 | 131.19680 | 1.99 | scalene |
+| 34 | 17.2899, 17.2899, 17.7281 | 131.58592 | 132.04811 | 0.46 | isosceles |
+| 37 | 14.9435, 19.7559, 22.3987 | 144.93603 | 148.69955 | 3.76 | scalene |
+| 38 | 17.2431, 18.6965, 19.8717 | 148.37141 | 151.90787 | 3.54 | scalene |
+| 39 | 17.2057, 18.9923, 20.3792 | 151.83073 | 154.93997 | 3.11 | scalene |
+| 41 | 18.6645, 19.2633, 19.8109 | 160.11055 | 161.18946 | 1.08 | scalene |
+| 42 | 18.7305, 19.3746, 19.9601 | 161.88709 | 163.07781 | 1.19 | scalene |
+| 43 | 19.3499, 19.4456, 19.5398 | 163.71933 | 164.03817 | 0.32 | scalene |
 
-The three triangle side lengths for each `n` are in
-[`data/records.csv`](data/records.csv) (columns `side_a ≤ side_b ≤ side_c`); full
-coordinates are in [`data/packings.json`](data/packings.json). Every improving triangle
-has exactly one 60° interior angle. The n = 24, 27, 28, 35, 36, 40, 44 cases, where the
-equilateral triangle is itself optimal, are not claimed.
+Side lengths above are sorted $a\le b\le c$ (full precision in
+[`data/records.csv`](data/records.csv); complete coordinates in
+[`data/packings.json`](data/packings.json)). Every improving triangle has exactly one
+60° interior angle. The n = 24, 27, 28, 35, 36, 40, 44 cases, where the equilateral
+triangle is itself optimal, are not claimed.
 
 Diagrams in Erich Friedman's site style (gray fill, black outline, no center dots) are in
 [`figures/`](figures/): small PNGs (`figures/png/`, sized so the outlines survive
