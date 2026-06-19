@@ -56,13 +56,8 @@ Per-packing figures are in [`figures/svg/`](figures/svg/) (vector) and
 
 ### Exact closed form for n = 25
 
-The n = 25 optimum is a 30-60-90 right triangle:
-
-* short leg `9 + √3`, long leg `3 + 9√3`, hypotenuse `18 + 2√3`
-* area `27 + 42√3` ≈ 99.746134
-
-Constructing the packing analytically (25 circles in a hexagonal arrangement at side
-`9 + √3`) gives wall clearance and pair distance equal to exactly 1 and 2 to 12 digits.
+The n = 25 optimum is a 30-60-90 right triangle: short leg `9 + √3`, long leg `3 + 9√3`,
+hypotenuse `18 + 2√3`, area `27 + 42√3` ≈ 99.746134 (exact).
 
 ## Verify
 

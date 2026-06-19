@@ -19,8 +19,6 @@ arithmetic, so every record here can be checked directly.
 | [`cirinl_circles_in_L/`](cirinl_circles_in_L/) | [`cirinl`](https://erich-friedman.github.io/packing/cirinl/) | New records, n = 17 to 40 (page stopped at n = 16) | 24 entries |
 | [`cirinttt_circles_in_triangles/`](cirinttt_circles_in_triangles/) | [`cirinttt`](https://erich-friedman.github.io/packing/cirinttt/) | Beat the best-known equilateral packing (Graham-Lubachevsky 1995) for n = 23, 25, 26, 29 to 34, 37 to 39, 41 to 43 | 15 improvements |
 
-See [`FINDINGS.md`](FINDINGS.md) for the full write-up.
-
 The two categories are separate folders. Each contains:
 
 ```
@@ -54,33 +52,10 @@ pip install -r common/solver_source/requirements.txt   # numpy, scipy, matplotli
 python3 render.py        # regenerates every SVG, PNG, and contact sheet from data/
 ```
 
-## How the packings were found
+## Notes
 
-`common/solver_source/` holds the optimizer:
-
-* `solver.py`: force-relaxation plus SLSQP optimizer for circles in convex polygons and
-  the L-tromino; minimizes the container scale directly.
-* `tritri.py`: circles in an arbitrary triangle, with the triangle vertices as free
-  variables and the triangle area as the objective.
-* `optimize.py`, `trivial_L.py`: multistart driver and trivial-grid baselines.
-
-The optimizer was checked three independent ways before any record was claimed:
-
-1. It reproduces the proven-optimal circles-in-equilateral-triangle side lengths
-   (n = 4, 5, 7, 9, 12, 15) to about 1e-13, and never returns a value below a proven
-   optimum.
-2. It reproduces every existing record on the `cirinpen`, `cirinhex`, and `cirinl`
-   (n at most 16) pages to the precision printed on the site.
-3. Every claimed packing is re-checked by `common/verify.py`, which shares no code with
-   the optimizer.
-
-New values were compared against the relevant best-known baselines (square/hexagonal
-grids for the L, and the Graham-Lubachevsky 1995 optimal equilateral packings for the
-triangle) and claimed only when strictly better.
-
-## Status
-
-These are best-known-style numerical results, not optimality proofs, produced 2026-06.
-The `cirinl` extension is on a container not covered by Packomania; the `cirinttt`
-improvements beat the optimal equilateral disk packings (G-L 1995). Suitable for
-submission to the maintainer of the Packing Center.
+Best-known-style numerical results (not optimality proofs). The optimizer
+(`common/solver_source/`) was sanity-checked by reproducing proven circles-in-triangle
+optima to ~1e-13 and existing `cirinl` records (n ≤ 16) to printed precision before any
+new value was claimed; each new value strictly beats the relevant best-known baseline
+(grids for the L, Graham-Lubachevsky 1995 for the triangle).

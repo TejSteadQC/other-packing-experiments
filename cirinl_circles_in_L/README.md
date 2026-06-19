@@ -36,18 +36,6 @@ likeliest to tighten with more search.
 Per-packing figures are in [`figures/svg/`](figures/svg/) (vector) and
 [`figures/png/`](figures/png/) (300 dpi), one `nNN` file each.
 
-## On closed forms
-
-These are numerical optima with no closed form expected. A few (n = 23, 25, 26) at
-first looked rigid by a crude degree-of-freedom count and so seemed likely to be
-analytic, with n = 26 even mirror-symmetric across the L's diagonal. A closer check
-refutes this: the contact-equation Jacobian is rank-deficient, and its null space has a
-nonzero component along s, so the contacts do not pin the side length. The packings are
-"floppy in s" — s is set by the inequality-constrained minimization, not a determined
-algebraic system, which is exactly why no simple radical fits (none matches `a + b√k` or
-`a + b/√k` to 1e-6, and PSLQ finds no stable low-degree minimal polynomial at 60 digits).
-The only exact value is the trivial n = 27 = 12.
-
 ## Verify
 
 ```bash
