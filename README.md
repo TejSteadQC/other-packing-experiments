@@ -23,17 +23,20 @@ The two categories are separate folders. Each contains:
 
 ```
 <category>/
-  README.md              the records table
-  data/records.csv       n, value, baseline, improvement
-  data/packings.json     full circle-center coordinates and container geometry
-  figures/svg/nNN.svg    one image per packing (vector)
-  figures/png/nNN.png    one image per packing (raster)
-  figures/all_packings.png    all packings at a glance
+  README.md                   the records table
+  data/records.csv            n, value, baseline, improvement (+ side lengths for triangles)
+  data/packings.json          full circle-center coordinates and container geometry
+  figures_ef/png/nNN.png      diagram per packing (raster, site style: gray fill, no dots)
+  figures_ef/svg/nNN.svg      diagram per packing (vector)
+  figures_ef/all_packings.png all packings at a glance
 ```
 
 `common/solver_source/` holds the optimizer that generated these
 (`solver.py` for the L-tromino, `tritri.py` for the arbitrary triangle,
-`optimize.py` the multistart driver, `trivial_L.py` the L grid baselines).
+`optimize.py` the multistart driver, `trivial_L.py` the L grid baselines);
+`render_ef.py` regenerates the diagrams from the coordinate data.
+`proof_circles_in_triangles_n2.pdf` proves the n = 2 circles-in-triangle optimum
+($6+4\sqrt2$).
 
 ## Verifying the results
 
