@@ -23,13 +23,14 @@ The two categories are separate folders. Each contains:
 
 ```
 <category>/
-  README.md              the records table and method
-  data/records.csv       n, value, baseline, improvement, verification residuals
+  README.md              the records table
+  data/records.csv       n, value, baseline, improvement
   data/packings.json     full circle-center coordinates and container geometry
-  figures/svg/nNN.svg    one vector figure per packing
-  figures/png/nNN.png    one 300-dpi raster figure per packing
-  figures/contact_sheet.png   all packings in the category at a glance
 ```
+
+`common/solver_source/` holds the optimizer that generated these
+(`solver.py` for the L-tromino, `tritri.py` for the arbitrary triangle,
+`optimize.py` the multistart driver, `trivial_L.py` the L grid baselines).
 
 ## Verifying the results
 
@@ -45,17 +46,10 @@ For each packing it prints the minimum pairwise center distance (must be at leas
 the minimum wall clearance (must be at least 1). Output ends with
 `ALL PACKINGS VERIFIED VALID`.
 
-## Reproducing the figures
-
-```bash
-pip install -r common/solver_source/requirements.txt   # numpy, scipy, matplotlib
-python3 render.py        # regenerates every SVG, PNG, and contact sheet from data/
-```
-
 ## Notes
 
-Best-known-style numerical results (not optimality proofs). The optimizer
-(`common/solver_source/`) was sanity-checked by reproducing proven circles-in-triangle
-optima to ~1e-13 and existing `cirinl` records (n ≤ 16) to printed precision before any
-new value was claimed; each new value strictly beats the relevant best-known baseline
-(grids for the L, Graham-Lubachevsky 1995 for the triangle).
+Best-known-style numerical results (not optimality proofs). The optimizer was
+sanity-checked by reproducing proven circles-in-triangle optima to ~1e-13 and existing
+`cirinl` records (n ≤ 16) to printed precision before any new value was claimed; each new
+value strictly beats the relevant best-known baseline (grids for the L,
+Graham-Lubachevsky 1995 for the triangle).
