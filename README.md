@@ -34,8 +34,14 @@ The two categories are separate folders. Each contains:
 `common/solver_source/` holds the optimizer that generated these
 (`solver.py` for the L-tromino, `tritri.py` for the arbitrary triangle,
 `optimize.py` the multistart driver, `trivial_L.py` the L grid baselines).
-`proof_circles_in_triangles_n2.pdf` proves the n = 2 circles-in-triangle optimum
-($6+4\sqrt2$).
+
+## Proof for n = 2 (circles in a triangle)
+
+[`proof_circles_in_triangles_n2.pdf`](proof_circles_in_triangles_n2.pdf) gives a full
+proof — not just a numerical record — that the smallest triangle containing two unit
+circles has area exactly $6+4\sqrt2$, attained by the right isosceles triangle with legs
+$2+2\sqrt2$ and hypotenuse $4+2\sqrt2$. It uses Heron's formula plus two monotonicity
+reductions and a one-variable minimization.
 
 ## Verifying the results
 
@@ -53,7 +59,8 @@ the minimum wall clearance (must be at least 1). Output ends with
 
 ## Notes
 
-Best-known-style numerical results (not optimality proofs). The optimizer was
+The tabulated records are best-known-style numerical results, not optimality proofs (the
+sole exception is the separate $n=2$ circles-in-triangle proof above). The optimizer was
 sanity-checked by reproducing proven circles-in-triangle optima to ~1e-13 and existing
 `cirinl` records (n ≤ 16) to printed precision before any new value was claimed; each new
 value strictly beats the relevant best-known baseline (grids for the L,
