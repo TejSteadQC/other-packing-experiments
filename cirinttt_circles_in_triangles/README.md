@@ -47,9 +47,11 @@ Each of the fifteen arbitrary-triangle packings beats that best-known equilatera
 
 Side lengths above are sorted $a\le b\le c$ (full precision in
 [`data/records.csv`](data/records.csv); complete coordinates in
-[`data/packings.json`](data/packings.json)). Every improving triangle has exactly one
-60° interior angle. The n = 24, 27, 28, 35, 36, 40, 44 cases, where the equilateral
-triangle is itself optimal, are not claimed.
+[`data/packings.json`](data/packings.json)). Most of these triangles have one interior
+angle very close to 60° (the two exceptions, n = 23 and n = 34, are isosceles); this
+appears to reflect a hexagonal-lattice corner but is an empirical observation, not a
+proven fact. The n = 24, 27, 28, 35, 36, 40, 44 cases, where the equilateral triangle is
+itself optimal, are not claimed.
 
 Diagrams in Erich Friedman's site style (gray fill, black outline, no center dots) are in
 [`figures/`](figures/): small PNGs (`figures/png/`, sized so the outlines survive
