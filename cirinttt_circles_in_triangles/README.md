@@ -49,6 +49,11 @@ See [`data/records.csv`](data/records.csv) and [`data/packings.json`](data/packi
 Every improving triangle has exactly one 60° interior angle. The n = 24, 27, 28, 35, 36,
 40, 44 cases, where the equilateral triangle is itself optimal, are not claimed.
 
+![all packings](figures/contact_sheet.png)
+
+Per-packing images are in [`figures/svg/`](figures/svg/) and [`figures/png/`](figures/png/),
+one `nNN` file each.
+
 ### Exact closed form for n = 25
 
 The n = 25 optimum is a 30-60-90 right triangle: short leg `9 + √3`, long leg `3 + 9√3`,
