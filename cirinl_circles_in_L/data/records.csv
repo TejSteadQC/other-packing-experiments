@@ -23,3 +23,4 @@ n,side_s,trivial_grid_s,improvement_vs_trivial,beats_trivial
 38,14.237364,14.392305,0.15494,True
 39,14.305617,15.0,0.694383,True
 40,14.549743,15.0,0.450257,True
+48,15.985209,16.0,0.014791,True

@@ -31,6 +31,16 @@ The values increase monotonically in `n`, and each exceeds the published n = 16 
 (~1e-3 to 1e-2 apart); the smaller verified value is reported, and these are the
 likeliest to tighten with more search.
 
+### Bonus: n = 48 — the square grid is not optimal
+
+A square grid of spacing 2 fills the L of size `s = 4k` with exactly `3k²` circles
+(an `8×8` grid minus the removed `4×4` corner gives `48` at `s = 16`). For `k = 1,2,3`
+(`n = 3,12,27`) this grid is optimal — even staggered/hexagonal seeds polish back to
+`s = 4k`. The first `k` where it is beaten is **`k = 4` (`n = 48`)**: a staggered packing
+fits 48 circles at **`s = 15.98521 < 16`** (two independent optimizer seeds agree to
+~1e-15; verified). The entry is included in `data/` and the figures as `n = 48`. (This is
+a best-known/numerical result, not a proof of optimality.)
+
 Diagrams in Erich Friedman's site style (gray fill, black outline, no center dots) are in
 [`figures/`](figures/): small PNGs (`figures/png/`, sized so the outlines survive
 downscaling) and crisp SVGs (`figures/svg/`), one `nNN` file each.
