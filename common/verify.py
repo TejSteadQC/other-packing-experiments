@@ -17,7 +17,7 @@ Usage:  python3 common/verify.py            (verifies everything)
 """
 import json, math, os, sys
 
-TOL = 1e-6
+TOL = 1e-7
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def _pair_min(P):
