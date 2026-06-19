@@ -28,7 +28,7 @@ The two categories are separate folders. Each contains:
   data/packings.json     full circle-center coordinates and container geometry
   figures/svg/nNN.svg    one image per packing (vector)
   figures/png/nNN.png    one image per packing (raster)
-  figures/contact_sheet.png   all packings at a glance
+  figures/all_packings.png    all packings at a glance
 ```
 
 `common/solver_source/` holds the optimizer that generated these
