@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="703.8" height="720.0" viewBox="0 0 703.8 720.0">
-<defs><clipPath id="inside"><polygon points="36.643,683.357 667.118,683.357 410.023,36.643"/></clipPath>
-<mask id="outside"><rect width="703.8" height="720.0" fill="white"/><polygon points="36.643,683.357 667.118,683.357 410.023,36.643" fill="black"/></mask></defs>
+<defs><clipPath id="inside"><polygon points="36.643,683.357 667.118,683.357 410.023,36.643"/></clipPath></defs>
 <rect width="703.8" height="720.0" fill="white"/>
 <circle cx="356.615" cy="583.245" r="36.643" fill="#e8a598" fill-opacity="0.65" stroke="#7b241c" stroke-width="1" clip-path="url(#inside)"/>
 <circle cx="356.615" cy="583.245" r="1.4" fill="#7b241c"/>
@@ -80,6 +79,6 @@
 <circle cx="429.901" cy="583.245" r="1.4" fill="#7b241c"/>
 <circle cx="503.188" cy="583.245" r="36.643" fill="#e8a598" fill-opacity="0.65" stroke="#7b241c" stroke-width="1" clip-path="url(#inside)"/>
 <circle cx="503.188" cy="583.245" r="1.4" fill="#7b241c"/>
-<polygon points="36.643,683.357 667.118,683.357 410.023,36.643" fill="none" stroke="#000000" stroke-width="3" mask="url(#outside)"/>
+<path d="M 410.572,29.097 L 671.978,686.655 L 30.931,686.655 L 410.572,29.097 Z M 667.118,683.357 L 410.023,36.643 L 36.643,683.357 L 667.118,683.357 Z" fill="#000000" fill-rule="evenodd"/>
 <text x="6" y="16" font-family="sans-serif" font-size="13" fill="#222">circles in arbitrary triangle  n=39  area=151.83073</text>
 </svg>

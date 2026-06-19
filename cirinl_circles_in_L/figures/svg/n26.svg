@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720.0" height="720.0" viewBox="0 0 720.0 720.0">
-<defs><clipPath id="inside"><polygon points="51.947,668.053 668.053,668.053 668.053,360.000 360.000,360.000 360.000,51.947 51.947,51.947"/></clipPath>
-<mask id="outside"><rect width="720.0" height="720.0" fill="white"/><polygon points="51.947,668.053 668.053,668.053 668.053,360.000 360.000,360.000 360.000,51.947 51.947,51.947" fill="black"/></mask></defs>
+<defs><clipPath id="inside"><polygon points="51.947,668.053 668.053,668.053 668.053,360.000 360.000,360.000 360.000,51.947 51.947,51.947"/></clipPath></defs>
 <rect width="720.0" height="720.0" fill="white"/>
 <circle cx="512.271" cy="415.401" r="51.947" fill="#7fb3d5" fill-opacity="0.65" stroke="#1f4e79" stroke-width="1" clip-path="url(#inside)"/>
 <circle cx="512.271" cy="415.401" r="1.4" fill="#1f4e79"/>
@@ -54,6 +53,6 @@
 <circle cx="103.893" cy="616.107" r="1.4" fill="#1f4e79"/>
 <circle cx="207.700" cy="130.783" r="51.947" fill="#7fb3d5" fill-opacity="0.65" stroke="#1f4e79" stroke-width="1" clip-path="url(#inside)"/>
 <circle cx="207.700" cy="130.783" r="1.4" fill="#1f4e79"/>
-<polygon points="51.947,668.053 668.053,668.053 668.053,360.000 360.000,360.000 360.000,51.947 51.947,51.947" fill="none" stroke="#000000" stroke-width="3" mask="url(#outside)"/>
+<path d="M 47.271,47.271 L 364.675,47.271 L 364.675,355.325 L 672.729,355.325 L 672.729,672.729 L 47.271,672.729 L 47.271,47.271 Z M 668.053,668.053 L 668.053,360.000 L 360.000,360.000 L 360.000,51.947 L 51.947,51.947 L 51.947,668.053 L 668.053,668.053 Z" fill="#000000" fill-rule="evenodd"/>
 <text x="6" y="16" font-family="sans-serif" font-size="13" fill="#222">circles in L-tromino  n=26  s=11.860387</text>
 </svg>
