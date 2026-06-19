@@ -32,10 +32,10 @@ The values increase monotonically in `n`, and each exceeds the published n = 16 
 likeliest to tighten with more search.
 
 Diagrams in Erich Friedman's site style (gray fill, black outline, no center dots) are in
-[`figures_ef/`](figures_ef/): small PNGs (`figures_ef/png/`, sized so the outlines survive
-downscaling) and crisp SVGs (`figures_ef/svg/`), one `nNN` file each.
+[`figures/`](figures/): small PNGs (`figures/png/`, sized so the outlines survive
+downscaling) and crisp SVGs (`figures/svg/`), one `nNN` file each.
 
-![all packings](figures_ef/all_packings.png)
+![all packings](figures/all_packings.png)
 
 ## Verify
 

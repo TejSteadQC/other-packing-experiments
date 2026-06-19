@@ -52,11 +52,11 @@ has exactly one 60° interior angle. The n = 24, 27, 28, 35, 36, 40, 44 cases, w
 equilateral triangle is itself optimal, are not claimed.
 
 Diagrams in Erich Friedman's site style (gray fill, black outline, no center dots) are in
-[`figures_ef/`](figures_ef/): small PNGs (`figures_ef/png/`, sized so the outlines survive
-downscaling) and crisp SVGs (`figures_ef/svg/`), one `nNN` file each, with the side
+[`figures/`](figures/): small PNGs (`figures/png/`, sized so the outlines survive
+downscaling) and crisp SVGs (`figures/svg/`), one `nNN` file each, with the side
 lengths captioned in the overview below.
 
-![all packings](figures_ef/all_packings.png)
+![all packings](figures/all_packings.png)
 
 ### Exact closed form for n = 25
 
