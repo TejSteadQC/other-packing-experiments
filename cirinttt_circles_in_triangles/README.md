@@ -10,7 +10,8 @@ are free, so the shape itself is part of the optimization.
 The page tabulates only `n` in {2, 4, 7, 8, 11, 12, 13, 16, 17, 18, 19, 22} and states:
 "For n not shown, the best known packing is in an equilateral triangle." For `n` strictly
 between triangular numbers, a tailored non-equilateral triangle does better than that
-equilateral fallback. This folder gives nine such improvements.
+equilateral fallback. This folder gives fifteen such improvements (n = 23, 25, 26, 29 to
+34, 37 to 39, 41 to 43).
 
 ## Improvements over the best-known equilateral packing
 
@@ -20,12 +21,14 @@ triangle: from 22 to 34 and beyond", Electron. J. Combin. 2 (1995), #A1, which c
 exactly this range. Their tabulated `d(n)` (the max-min center distance in a unit-side
 triangle) converts to the smallest equilateral side holding `n` unit circles via
 `s = 2/d(n) + 2√3`, hence area `(√3/4)s²`. Values are in
-[`data/gl_baselines.json`](data/gl_baselines.json).
+[`data/gl_baselines.json`](data/gl_baselines.json). G-L tabulates n = 22 to 34; for
+n = 38, 39, 41 (not individually listed there) a heavy independently-validated
+equilateral solve is used, labeled as such in `data/records.csv`.
 
-Each of the nine arbitrary-triangle packings beats that best-known equilateral area:
+Each of the fifteen arbitrary-triangle packings beats that best-known equilateral area:
 
-| n | new area (arbitrary triangle) | best-known equilateral (G-L 1995) | improvement | shape |
-|---|------------------------------|----------------------------------:|------------:|-------|
+| n | new area (arbitrary triangle) | best-known equilateral | improvement | shape |
+|---|------------------------------|----------------------:|------------:|-------|
 | 23 | 92.74138  | 95.90965  | 3.17 | isosceles |
 | 25 | 99.74613  | 101.28194 | 1.54 | right (exact, see below) |
 | 26 | 102.70487 | 103.48085 | 0.78 | scalene |
@@ -35,10 +38,16 @@ Each of the nine arbitrary-triangle packings beats that best-known equilateral a
 | 32 | 127.07490 | 128.81089 | 1.74 | scalene |
 | 33 | 129.20635 | 131.19680 | 1.99 | scalene |
 | 34 | 131.58592 | 132.04811 | 0.46 | isosceles |
+| 37 | 144.93603 | 148.69955 | 3.76 | scalene |
+| 38 | 148.37141 | 151.90787 | 3.54 | scalene |
+| 39 | 151.83073 | 154.93997 | 3.11 | scalene |
+| 41 | 160.11055 | 161.18946 | 1.08 | scalene |
+| 42 | 161.88709 | 163.07781 | 1.19 | scalene |
+| 43 | 163.71933 | 164.03817 | 0.32 | scalene |
 
 See [`data/records.csv`](data/records.csv) and [`data/packings.json`](data/packings.json).
-The n = 24, 27, 28, 35 cases, where the equilateral triangle is itself optimal, are not
-claimed.
+Every improving triangle has exactly one 60° interior angle. The n = 24, 27, 28, 35, 36,
+40, 44 cases, where the equilateral triangle is itself optimal, are not claimed.
 
 ![all packings](figures/contact_sheet.png)
 

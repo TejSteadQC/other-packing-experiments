@@ -16,8 +16,10 @@ arithmetic, so every record here can be checked directly.
 
 | Folder | Page | Result | Count |
 |--------|------|--------|-------|
-| [`cirinl_circles_in_L/`](cirinl_circles_in_L/) | [`cirinl`](https://erich-friedman.github.io/packing/cirinl/) | New records, n = 17 to 30 (page stopped at n = 16) | 14 entries |
-| [`cirinttt_circles_in_triangles/`](cirinttt_circles_in_triangles/) | [`cirinttt`](https://erich-friedman.github.io/packing/cirinttt/) | Beat the best-known equilateral packing (Graham-Lubachevsky 1995) for n = 23, 25, 26, 29 to 34 | 9 improvements |
+| [`cirinl_circles_in_L/`](cirinl_circles_in_L/) | [`cirinl`](https://erich-friedman.github.io/packing/cirinl/) | New records, n = 17 to 40 (page stopped at n = 16) | 24 entries |
+| [`cirinttt_circles_in_triangles/`](cirinttt_circles_in_triangles/) | [`cirinttt`](https://erich-friedman.github.io/packing/cirinttt/) | Beat the best-known equilateral packing (Graham-Lubachevsky 1995) for n = 23, 25, 26, 29 to 34, 37 to 39, 41 to 43 | 15 improvements |
+
+See [`FINDINGS.md`](FINDINGS.md) for the full write-up.
 
 The two categories are separate folders. Each contains:
 
