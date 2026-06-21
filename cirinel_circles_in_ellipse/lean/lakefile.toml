@@ -1,0 +1,18 @@
+name = "ellipse_lean"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["Ellipse"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = false
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.31.0"
+
+[[lean_lib]]
+name = "Ellipse"

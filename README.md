@@ -43,6 +43,18 @@ circles has area exactly $6+4\sqrt2$, attained by the right isosceles triangle w
 $2+2\sqrt2$ and hypotenuse $4+2\sqrt2$. It uses Heron's formula plus two monotonicity
 reductions and a one-variable minimization.
 
+## Proof for n = 2 (circles in an ellipse)
+
+[`cirinel_circles_in_ellipse/`](cirinel_circles_in_ellipse/) proves that the smallest-area
+ellipse containing two unit circles has area exactly $\tfrac{3\sqrt3}{2}\pi$, attained by
+$\tfrac{x^2}{9/2}+\tfrac{y^2}{3/2}\le1$ with the circles at $(\pm1,0)$. This value was found
+numerically by Buddenhagen (2004) on the [`cirinel`](https://erich-friedman.github.io/packing/cirinel/)
+page but, as far as we know, never proved. The folder contains a self-contained hand proof
+(four steps: normalize, reduce to one disk, AM–GM lower bound, perfect-square construction),
+an exact-arithmetic verifier, and a **formally verified Lean 4 + mathlib development**
+(kernel-checked, zero `sorry`, only the standard axioms; covers arbitrary tilted/off-center
+ellipses and the genuine Lebesgue area).
+
 ## Verifying the results
 
 The verifier reads only the coordinate files and uses nothing but the Python standard
