@@ -38,7 +38,7 @@ def hex_grid_points(s, spacing=2.0):
         y+=dy; j+=1
     return count_in_L(P,s)
 
-def best_trivial_s(n, smax=20.0, step=0.0005):
+def best_trivial_s(n, smax=40.0, step=0.0005):
     """smallest s such that square-grid OR hex-grid fits >= n circles."""
     best=None; bestkind=None; bestP=None
     s=2.0

@@ -10,8 +10,18 @@ are free, so the shape itself is part of the optimization.
 The page tabulates only `n` in {2, 4, 7, 8, 11, 12, 13, 16, 17, 18, 19, 22} and states:
 "For n not shown, the best known packing is in an equilateral triangle." For `n` strictly
 between triangular numbers, a tailored non-equilateral triangle does better than that
-equilateral fallback. This folder gives fifteen such improvements (n = 23, 25, 26, 29 to
-34, 37 to 39, 41 to 43).
+equilateral fallback. This folder gives:
+
+- the original **fifteen** improvements at n = 23, 25, 26, 29–34, 37–39, 41–43 (detailed
+  table below), and
+- a further **38 new records at n = 46 to 100** (n = 46, 47, 48, 50–53, 56–58, 61–63,
+  67–70, 72–75, 79–82, 85–88, 92–100), each beating our own best equilateral packing for
+  that `n`. See [`data/records.csv`](data/records.csv) for the full table and
+  [`data/packings.json`](data/packings.json) for coordinates.
+
+The remaining `n` up to 100 — those at and just around triangular numbers (n = 44, 45, 49,
+54, 55, 59, 60, 64–66, 71, 76–78, 83, 84, 89–91) — are **not** claimed: there the
+equilateral triangle is the best we know, so no separate cirinttt entry is warranted.
 
 ## Improvements over the best-known equilateral packing
 
@@ -52,6 +62,17 @@ angle very close to 60° (the two exceptions, n = 23 and n = 34, are isosceles);
 appears to reflect a hexagonal-lattice corner but is an empirical observation, not a
 proven fact. The n = 24, 27, 28, 35, 36, 40, 44 cases, where the equilateral triangle is
 itself optimal, are not claimed.
+
+## The n = 46–100 records
+
+These 38 entries were found by deforming our own best equilateral packing (see the
+companion `cirintri_circles_in_equilateral_triangles/` folder, n = 16–100) into an
+arbitrary triangle and minimizing area. Each beats that equilateral packing's area; the
+baseline used per `n` is our equilateral area, recorded in the `best_equilateral_area`
+column of [`data/records.csv`](data/records.csv) with source
+`equilateral (this project, n=16-100 extension)`. As with the original fifteen, these are
+best-known/numerical, not optimality proofs. The same near-triangular `n` that favor the
+equilateral arrangement (listed above) show no improvement and are omitted.
 
 Diagrams in Erich Friedman's site style (gray fill, black outline, no center dots) are in
 [`figures/`](figures/): small PNGs (`figures/png/`, sized so the outlines survive

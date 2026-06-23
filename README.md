@@ -12,12 +12,13 @@ smallest container of a given shape. A packing is valid iff every pair of center
 least 2 apart and every center is at least 1 from the boundary. Both conditions are plain
 arithmetic, so every record here can be checked directly.
 
-## The two submissions
+## The submissions
 
 | Folder | Page | Result | Count |
 |--------|------|--------|-------|
-| [`cirinl_circles_in_L/`](cirinl_circles_in_L/) | [`cirinl`](https://erich-friedman.github.io/packing/cirinl/) | New records, n = 17 to 48 (page stopped at n = 16) | 32 entries |
-| [`cirinttt_circles_in_triangles/`](cirinttt_circles_in_triangles/) | [`cirinttt`](https://erich-friedman.github.io/packing/cirinttt/) | Beat the best-known equilateral packing (Graham-Lubachevsky 1995) for n = 23, 25, 26, 29 to 34, 37 to 39, 41 to 43 | 15 improvements |
+| [`cirinl_circles_in_L/`](cirinl_circles_in_L/) | [`cirinl`](https://erich-friedman.github.io/packing/cirinl/) | New records, n = 17 to 100 (page stopped at n = 16) | 84 entries |
+| [`cirintri_circles_in_equilateral_triangles/`](cirintri_circles_in_equilateral_triangles/) | [`cirintri`](https://erich-friedman.github.io/packing/cirintri/) | Table extended to n = 16 to 100 (page stopped at n = 15); **a compilation, chiefly from Graham–Lubachevsky 1995** + gap-fills, credited per entry | 85 entries |
+| [`cirinttt_circles_in_triangles/`](cirinttt_circles_in_triangles/) | [`cirinttt`](https://erich-friedman.github.io/packing/cirinttt/) | Smaller-area (non-equilateral) triangles than the best-known equilateral, n = 23–43 (15, original) + n = 46–100 (38 new) | 53 entries |
 
 The two categories are separate folders. Each contains:
 

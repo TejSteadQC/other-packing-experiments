@@ -90,6 +90,20 @@ def verify_cirinttt(path):
         print(f"{int(n):>3} {area:>11.5f} {mp:>11.7f} {mw:>11.7f}  {'OK' if ok else 'FAIL'}")
     return allok
 
+def verify_cirintri(path):
+    packs = json.load(open(path))
+    print(f"\n=== cirintri (circles in equilateral triangles) — {len(packs)} packings ===")
+    print(f"{'n':>3} {'side_s':>11} {'min_pair':>11} {'min_wall':>11}  status")
+    allok = True
+    for n in sorted(packs, key=int):
+        d = packs[n]; P = d['centers']; V = d['triangle_vertices']
+        assert len(P) == int(n), f"n={n}: {len(P)} centers!"
+        mp = _pair_min(P); mw = wall_clear_triangle(P, V)
+        ok = mp >= 2-TOL and mw >= 1-TOL
+        allok &= ok
+        print(f"{int(n):>3} {d['side_s']:>11.6f} {mp:>11.7f} {mw:>11.7f}  {'OK' if ok else 'FAIL'}")
+    return allok
+
 def main():
     which = sys.argv[1] if len(sys.argv) > 1 else 'all'
     ok = True
@@ -99,6 +113,9 @@ def main():
     if which in ('all', 'cirinttt'):
         p = os.path.join(ROOT, 'cirinttt_circles_in_triangles', 'data', 'packings.json')
         if os.path.exists(p): ok &= verify_cirinttt(p)
+    if which in ('all', 'cirintri'):
+        p = os.path.join(ROOT, 'cirintri_circles_in_equilateral_triangles', 'data', 'packings.json')
+        if os.path.exists(p): ok &= verify_cirintri(p)
     print("\n" + ("ALL PACKINGS VERIFIED VALID" if ok else "*** SOME PACKINGS FAILED ***"))
     sys.exit(0 if ok else 1)
 

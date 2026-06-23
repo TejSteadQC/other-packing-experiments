@@ -60,10 +60,12 @@ class RegularPolygon:
         return P
 
     def wall_clearance(self, P, s):
-        """min over points of (apothem - n.p) -- should be >= 1 for feasibility."""
+        """Signed min SLACK to all walls: (min center-to-wall distance) - 1, so >=0 means
+        a unit circle fits. Matches the LTromino convention that verify() expects
+        (verify adds 1 and checks >= 1)."""
         a = self.apothem(s)
         d = P[:,0:1]*self.nx[None,:] + P[:,1:2]*self.ny[None,:]
-        return (a - d).min()
+        return (a - d).min() - 1.0
 
     # SLSQP constraint machinery: variables z = [s, x0,y0,x1,y1,...]
     def constraints(self, n):
